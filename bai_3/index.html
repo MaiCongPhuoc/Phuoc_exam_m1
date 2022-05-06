@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = 'Mai Cong Phuoc';
+        function countVowel(string) {
+            let count = 0;
+            for (let i = 0; i < string.length; i++) {
+                if (string[i] == 'a' || string[i] == 'o' || string[i] == 'e' || string[i] == 'u' || string[i] == 'i') {
+                    count++;
+                }
+            }
+            if (count == 0) {
+                return document.write('False');
+            }
+            else {
+                return document.write(`kí tự nguyên âm trong chuỗi là: ${count}`);
+            }
+        }
+        countVowel(string);
+    </script>
+</body>
+</html>

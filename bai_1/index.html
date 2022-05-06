@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let a = 8, b = 12, c = -20;
+    let delta = b * b - (4 * a * c);
+    if (a > 0) {
+        if (delta < 0) {
+            console.log('phương trình vô nghiệm');
+        } else if (delta == 0) {
+            console.log('phương trình có nghiệm kép: ' - b / (2 * a));
+        } else {
+            let x1 = 0, x2 = 0;
+            x1 = (-b + Math.sqrt(delta) / (2 * a))
+            x2 = (-b - Math.sqrt(delta) / (2 * a))
+            console.log('phương trình có 2 nghiệm phân biệt: ' + 'x1: ' + x1 + 'x2: ' + x2);
+        }
+    } else {
+        console.log('day là phương trình bậc nhất');
+    }
+</script>
+
+</html>

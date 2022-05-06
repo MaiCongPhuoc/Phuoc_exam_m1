@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [0, 1, 2, 3, 4, 5, 6];
+        let currenValue = 3;
+        findArr(currenValue, arr);
+        function findArr(currenValue, arr) {
+            for (let i = 0; i < arr.length; i++) {
+                if(arr[i] == currenValue) {
+                    console.log('giá trị bạn vừa nhập có trong mảng: ' + arr)
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
