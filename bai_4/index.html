@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        class staff {
+        class Staff {
             constructor(fullname, email){
                 this.fullname = fullname,
                 this.email = email
@@ -26,14 +26,22 @@
                 return this.email;
             }
             toString() {
-                return this.fullname = toString(fullname);
-                return this.email = toString(email);
+                return `${this.fullname}, ${this.email}`;
             }
         }
-        let david = new staff('david', 'david@gmail,com')
+        let david = new Staff('david', 'david@gmail,com')
         david.setFullName('David Do');
         david.setEmail('david.do@gmail,com');
         david.toString();
+        let staffs = [
+            david,
+            new Staff('phuoc', 'maiphuoc244@gmail.com'),
+            new Staff('luan', 'mailuan244@gmail.com'),
+            new Staff('ngoc', 'maingoc244@gmail.com')
+        ]
+        for (let i = 0; i < staffs.length; i++) {
+            console.log(staffs[i])
+        }
     </script>
 </body>
 </html>
